@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+    .btn_only {
+        display: block;
+        height: 40px;
+        margin: 10px 3.125%;
+        background: #eb5353;
+        border-radius: 5px;
+        line-height: 40px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+    </style>
+</head>
+
+<body>
+    <img src='images/hyc1.png' />
+    <a href='javascript:;' class='btn_only' id='buyBtn'>马上购买</a>
+	
+    <script>
+    if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.getElementById('buyBtn').onclick = function(){
+			document.location = 'objc://showDetial' + ':/' + 'https://apptrade.myfund.com:8383/appweb/page/common/foward.jsp?business=022&fundcode=CB0002';
+		};
+    } else if (window.navigator.userAgent.indexOf('Android') != -1) {
+        document.getElementById('buyBtn').onclick = function(){
+			window.Android.showDetial('https://apptrade.myfund.com:8383/appweb/page/common/foward.jsp?business=022&fundcode=CB0002');
+		};
+    };
+    </script>
+</body>
+
+</html>

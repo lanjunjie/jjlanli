@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/public_header" />
+    <TextView 
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:textColor="#ff0000"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dip"
+        android:text="分红方式变更成功"/>
+    <TextView 
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dip"
+        android:text="    您变更的分红方式，要经过二到三个工作日的审核才能查看变更信息..."/>
+    <Button 
+        android:id="@+id/bt_Change_bonus_OK"
+	    android:layout_width="200dip"
+	    android:layout_height="40dip"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="30dip"
+	    android:text="确定"
+	    android:textColor="#FFFFFF"
+	    android:background="@drawable/selector_red_button"/>
+
+</LinearLayout>

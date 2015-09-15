@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <EditText
+        android:id="@+id/editText_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border_white_normal"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:hint="输入您的意见，让我们更好的改进产品……"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editText_feedback_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border_white_normal"
+        android:textSize="14sp"
+        android:hint="如需客服主动联系您，请留下手机号"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/bt_feedback_submit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_red_button"
+        android:text="提   交"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

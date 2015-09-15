@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bt_normal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_et_hint" >
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="基金名称"
+                    android:textColor="@color/main_et_hint" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="首次扣款日期"
+                    android:textColor="@color/main_et_hint" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="周期"
+                    android:textColor="@color/main_et_hint" />
+                 <TextView
+                     android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="操作"
+                    android:textColor="@color/main_et_hint" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_et_hint" >
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_dtmanage_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_et_hint" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="温馨提示"
+                    android:textColor="@color/main_et_hint"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/main_et_hint" >
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="定期投资交易明细请从（交易确认）中查询" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

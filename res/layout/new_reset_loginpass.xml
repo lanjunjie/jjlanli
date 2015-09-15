@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#f2f2f2"
+    android:orientation="vertical" >
+   <!--  重置登陆密码 -->
+    <include layout="@layout/public_header" />
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#D3D3D3" />
+
+
+    <EditText
+        android:id="@+id/new_reset_loginphone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:background="#fff" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        >
+
+        <EditText
+            android:id="@+id/new_reset_logincode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入验证码"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/new_reset__logingaincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="获取验证码"
+            android:textColor="#0000ff"
+              android:background="@drawable/selector_white_button"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="#D3D3D3" />
+
+    <EditText
+        android:id="@+id/new_reset_logintraderpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入登录密码(6-12位)"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:background="#fff" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="#D3D3D3" />
+    
+    <EditText
+        android:id="@+id/new_reset_next_logintraderpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请再次输入登录密码"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:background="#fff" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/new_reset_loginaffirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_red_button"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="确认"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

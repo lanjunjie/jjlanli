@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+     <include layout="@layout/public_header" />
+     <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="40dip"
+         android:layout_marginTop="20dip"
+         android:background="@drawable/backdrop_pure"
+         android:gravity="center"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dip"
+             android:layout_weight="1"
+             android:text="您还不是点财通会员，点此立即开通"
+             android:textColor="#FF5151"
+             android:textSize="14dip" />
+		<LinearLayout 
+		    android:layout_weight="1"
+		    android:layout_width="0dip"
+		    android:gravity="right"
+		    android:layout_marginRight="10dip"
+		    android:layout_height="wrap_content">
+         <ImageView 
+             android:id="@+id/imag_dredge_view"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/button_dredge"/>
+         </LinearLayout>
+     </LinearLayout>
+     <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/ba_property"
+         android:layout_marginLeft="10dip"
+         android:layout_marginRight="10dip"
+         android:layout_marginTop="10dip"
+         android:orientation="vertical">
+         <TextView 
+             android:id="@+id/tex_cont"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="30dip"
+             android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"
+             android:text=""/>
+         <ImageView 
+             android:id="@+id/image_the_details"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginTop="50dip"
+             android:background="@drawable/button_particulars"/>
+         
+         
+     </LinearLayout>
+    
+</LinearLayout>

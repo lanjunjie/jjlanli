@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ba_lifelong"
+        android:orientation="vertical">
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="horizontal">
+             <TextView 
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="基金名称 "/>
+             <View 
+                 android:layout_width="1dip"
+                 android:layout_height="30dip"
+                 android:background="#BEBEBE"/>
+             <TextView 
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="申购日期 "/>
+             <View 
+                 android:layout_width="1dip"
+                 android:layout_height="30dip"
+                 android:background="#BEBEBE"/>
+             <TextView 
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="申购金额 "/>
+             <View 
+                 android:layout_width="1dip"
+                 android:layout_height="30dip"
+                 android:background="#BEBEBE"/>
+             <TextView 
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="申购费 "/>
+         </LinearLayout>
+         <View 
+             android:layout_width="match_parent"
+             android:layout_height="1dip"
+             android:background="#BEBEBE"/>
+         <ListView 
+             android:id="@+id/list_Member"
+             android:descendantFocusability="blocksDescendants"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             
+         </ListView>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="50dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout_not_move_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+      <ImageView
+            android:id="@+id/img_Optional_isSelected"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/red_star_hollow_big" />
+   
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_Optional_fundName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_Optional_fundCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+  
+
+        <com.myfp.myfund.ui.view.ListItemHorizontalOptionalScrollView
+            android:id="@+id/item_scroll_Optional"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_Optional_unitEquity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_Optional_dealDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/tv_Optional_dayBenefit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_Optional_totalEquity"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/tv_Optional_weekRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_Optional_monthRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_Optional_seasonRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_Optional_halfYearRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_Optional_YearRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_Optional_toyearRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/bt_Optional_operate"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#444"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="购买"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </com.myfp.myfund.ui.view.ListItemHorizontalOptionalScrollView>
+    
+    
+
+</LinearLayout>

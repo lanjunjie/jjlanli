@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+    
+ <include layout="@layout/public_header"/>
+
+ <View 
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:layout_marginTop="25dp"
+     android:background="#d3d3d3"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:orientation="horizontal">
+
+     <EditText
+         android:id="@+id/new_dredgede_name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="请输入您的真实姓名"
+         android:textSize="18sp"
+         android:padding="10dp"
+         android:background="#fff" 
+       	 >
+     </EditText> 
+ </LinearLayout>
+<View android:layout_width="match_parent"
+  
+     android:layout_height="1dp"
+     android:layout_marginLeft="15dp"
+     android:background="#d3d3d3"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:orientation="horizontal">
+
+     <EditText
+         android:id="@+id/new_dredgede_idcard"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="请输入您的身份证号"
+           android:textSize="18sp"
+         android:padding="10dp"
+         android:background="#fff" 
+       	 >
+     </EditText> 
+ </LinearLayout>
+ <View android:layout_width="match_parent"
+  
+     android:layout_height="1dp"
+    
+     android:background="#d3d3d3"/>
+  <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:paddingTop="15dp"
+     android:layout_marginLeft="10dp"
+     android:orientation="horizontal">
+
+     <TextView
+        
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+       	android:text="请设置交易密码"
+       	 >
+     </TextView> 
+ </LinearLayout>
+ <View android:layout_width="match_parent"
+  
+     android:layout_height="1dp"
+  
+     android:background="#d3d3d3"/>
+  <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+   
+     android:orientation="horizontal">
+
+     <EditText
+         android:id="@+id/new_dredgede_paddword"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="textPassword"
+         android:hint="请输入交易密码"
+           android:textSize="18sp"
+         android:maxLength="8"
+         android:padding="10dp"
+         android:background="#fff" 
+       	 >
+     </EditText> 
+ </LinearLayout>
+ <View 
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:layout_marginLeft="15dp"
+     android:background="#d3d3d3"/>
+  <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:orientation="horizontal">
+
+     <EditText
+         android:id="@+id/new_dredgede_nextpassword"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="textPassword"
+         android:hint="请再次输入您的交易密码"
+         android:maxLength="8"
+           android:textSize="18sp"
+         android:padding="10dp"
+         android:background="#fff" 
+       	 >
+     </EditText> 
+ </LinearLayout>
+ <View android:layout_width="match_parent"
+  
+     android:layout_height="1dp"
+     android:layout_marginLeft="15dp"
+     android:background="#d3d3d3"/>
+  <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:orientation="horizontal">
+
+     <EditText
+         android:id="@+id/new_dredgede_code"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="请输入服务代码,如没有,请填写7777"
+           android:textSize="18sp"
+         android:padding="10dp"
+         android:background="#fff" 
+       	 >
+     </EditText> 
+ </LinearLayout>
+ <View android:layout_width="match_parent"
+  
+     android:layout_height="1dp"
+   
+     android:background="#d3d3d3"/>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:paddingLeft="15dp"
+     android:paddingRight="15dp"
+     android:paddingTop="33dp"
+   
+     >
+
+     <Button
+         android:id="@+id/new_dredgede_next"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:gravity="center"
+         android:textSize="20sp"
+         android:textColor="#ffffff"
+         android:text="下一步" 
+         android:background="@drawable/selector_red_button"/>
+
+ </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+         <CheckBox
+             android:id="@+id/new_new_dredgede_readed"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="我已认真阅读并了解"
+             android:textColor="#434343" />
+
+        <TextView 
+            android:id="@+id/new_dredgede_clause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#f00"
+            android:text="服务条款"/>
+    </LinearLayout>
+</LinearLayout>

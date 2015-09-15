@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" 
+    android:orientation="vertical" >
+ <!--     android:background="#f2f2f2"--> 
+	<!-- 注册页面 -->
+    <include layout="@layout/public_header" />
+
+   
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:background="#fff" 
+        android:orientation="horizontal">
+       
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center"
+    android:background="@drawable/phoneone"/>
+    <EditText
+        android:id="@+id/shortcut_register_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="手机号"
+        android:maxLength="11"
+        android:digits="0123456789"
+        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="18sp"
+        android:background="#fff" />
+</LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:background="#D3D3D3" />
+<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <Button 
+            android:id="@+id/shortcut_step"
+            android:layout_width="300dip"
+            android:layout_height="40dip"
+            android:background="@drawable/selector_register_button"
+            android:textColor="#FFFFFF"
+            android:textSize="18dip"
+            android:text="下一步"/>
+    </LinearLayout>
+   
+
+</LinearLayout>

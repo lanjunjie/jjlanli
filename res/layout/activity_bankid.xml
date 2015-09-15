@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bt_normal"
+    android:orientation="vertical" >
+  <include layout="@layout/public_header" />
+    <EditText
+        android:id="@+id/et_bankid_banknum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/et_writeinfor"
+        android:gravity="center_vertical"
+        android:hint="请填写银行卡号"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/main_et_hint"
+        android:textSize="15sp" />
+    
+       <Button
+            android:id="@+id/bt_bankid_confirm"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_red_button"
+            android:text="确定"
+            android:textColor="#ffffff" />
+
+</LinearLayout>

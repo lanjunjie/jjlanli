@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f3"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="交易记录将在基金认购成功后7个工作日内显示"
+        android:textColor="#7d7d7e"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/tishi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zhanhenglogo2x" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="24dip"
+            android:textColor="#aaaaab"
+            android:text="无基金交易记录"/>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/te_yc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+  
+
+    <ListView
+        android:id="@+id/list_defend_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip" >
+    </ListView>
+
+</LinearLayout>

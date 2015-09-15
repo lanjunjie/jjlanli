@@ -1,0 +1,224 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/public_header" />
+
+    <FrameLayout
+        android:id="@+id/layout_main_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/banner_default" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.myfp.myfund.ui.view.CirclePageIndicator
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:padding="10dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#E0E0E0"
+        android:orientation="vertical" >
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_marginTop="2dip"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layout_cemetery"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_cemetery" />
+		
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_feature"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_zx" />
+         
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_private"
+           android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical" >
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:background="@drawable/button_private"
+		    />
+		
+           </LinearLayout>
+         
+        </LinearLayout>
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layout_subscribe"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="#FCFCFC"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical" >
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:background="@drawable/button_subscribe"
+		    />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_fintheircing"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="#FCFCFC"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical" >
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:background="@drawable/button_feature"
+		    />
+		
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_privateone"
+           android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="#FCFCFC"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical" >
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:background="@drawable/button_customization"
+		    />
+		
+           </LinearLayout>
+         
+        </LinearLayout>
+  
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+       	 android:layout_marginRight="5dip"
+       	 android:layout_marginLeft="5dip"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+        	android:background="@drawable/home_page"
+        	android:gravity="center"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:text="客服电话:"/>
+            <ImageView 
+                android:layout_marginLeft="80dip"
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:background="@drawable/phone_a"/>
+            <TextView 
+                android:id="@+id/text_phone"
+                android:layout_marginLeft="5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FF5151"
+                android:text="400-888-6661"/>
+            <ImageView 
+                android:layout_marginLeft="8dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_to"/>
+            
+        </LinearLayout>
+       <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+        	android:background="@drawable/home_page"
+        	android:gravity="center"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:text="公司网址:"/>
+            <TextView 
+                android:id="@+id/textview_view"
+                android:layout_marginLeft="75dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="#FF5151"
+                android:text="www.myfund.com"/>
+            <ImageView 
+                android:layout_marginLeft="8dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_to"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 底部 -->
+    
+</LinearLayout>

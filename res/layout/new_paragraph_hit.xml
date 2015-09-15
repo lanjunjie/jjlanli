@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="恭喜！"
+            android:textColor="#ff0000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您已开通基金交易账户！"
+            android:textColor="#ff0000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="我们已向您的银行卡划入一笔小额资金,请及时查看您的到账金额,如未设置银行卡短信提醒,您可以通过相关银行客服、网上银行、柜台查询小额验证金额数。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/new_hit_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入收到的金额数   例(0.67)" />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="输入次数达到3次，已锁定，请拨打热线电话：400-888-6661进行咨询"
+            android:textColor="#ff0000"/>
+    </LinearLayout>
+  <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+           <Button 
+               android:id="@+id/new_finish_proving"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="完成验证"
+               android:padding="7dp"
+               android:textSize="22sp"
+               android:textColor="#ffffff"
+               android:background="@drawable/selector_red_button"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="right">
+            <TextView android:id="@+id/new_later_proving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="稍后验证"
+                android:textColor="#0000ff"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              	android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="提示：输入错误3次，即被锁定，如果疑问，请拨打热线电话400-888-6661进行咨询。" />
+
+        </RelativeLayout>
+</LinearLayout>

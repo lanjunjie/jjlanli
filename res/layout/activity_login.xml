@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/main_et_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入手机号码/用户名"
+                    android:textColorHint="@color/main_et_hint"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/img_login_moreUser"
+                    android:onClick="login"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/arrow_login" />
+                
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoCompleteTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:ems="10"
+               >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/main_et_bg"
+                android:gravity="center_vertical"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/main_et_hint"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_forget_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="忘记密码?"
+                android:textColor="#ff0000" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_red_button"
+                android:text="登   录"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/bt_reg"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_blue"
+                android:text="注册"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示："
+                    android:textColor="@color/red_bt_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="此账号用于登录客户空间。登录客户空间后，您可以查看您的公募持仓、固收产品、自选产品以及其他专享服务。"
+                    android:textColor="@color/red_bt_normal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/selector_white_button"
+                    android:gravity="center"
+                    android:text="客服热线：400-888-6661"
+                    android:textColor="#f00" />
+            </RelativeLayout>
+        <ListView
+            android:id="@+id/lv_login_moreUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="#fff"
+            android:paddingLeft="15dp"
+            android:visibility="gone" >
+        </ListView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

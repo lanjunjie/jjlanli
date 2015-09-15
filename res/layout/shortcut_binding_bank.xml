@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" 
+    android:orientation="vertical" >
+    <!-- android:background="#F0F0F0" -->
+    <include layout="@layout/public_header"/>
+        <LinearLayout 
+      	
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="持卡人"/>
+        <TextView 
+            android:id="@+id/shortcut_bank_name"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginLeft="25dp"
+            android:textSize="18dip"
+           
+            />
+    </LinearLayout>
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="95dip"
+        android:background="#d3d3d3"/>
+        <LinearLayout 
+       
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="身份证号"/>
+        <TextView 
+            android:id="@+id/shortcut_bank_idcard"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+          
+            android:textSize="18dip"
+            android:layout_marginLeft="5dp"
+           
+            />
+    </LinearLayout>  
+            <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="95dip"
+        android:background="#d3d3d3"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+       android:padding="10dp"
+       android:background="#eeeeee"
+        android:text="持卡人信息必须与绑定银行卡保持一致"/>
+  
+    
+    <LinearLayout 
+        android:id="@+id/shortcut_new_DBK"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        
+        android:orientation="horizontal">
+        <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="银行"/>
+        <TextView 
+            android:id="@+id/shortcut_text_DBK"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+           
+            android:textSize="18dip"
+            android:paddingLeft="50dp"
+            android:textColor="#a6a6a6"
+            android:text="点此选择"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/raw2right"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="95dip"
+        android:background="#d3d3d3"/>
+    <LinearLayout 
+        android:id="@+id/shortcut_new_Provinces"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="省份城市"/>
+         <TextView 
+            android:id="@+id/shortcut_text_provinces"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+     
+            android:textSize="18dip"
+            android:text="点此选择"
+             android:textColor="#a6a6a6"
+            android:paddingLeft="12dp"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/raw2right"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="95dip"
+        android:background="#d3d3d3"/>
+    <LinearLayout 
+        android:id="@+id/shortcut_new_Openingbank"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="选择支行"/>
+         <TextView 
+            android:id="@+id/shortcut_text_Openingbank"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+           
+            android:textSize="18dip"
+            android:text="点此选择"
+             android:textColor="#a6a6a6"
+            android:paddingLeft="12dp"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/raw2right"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="95dip"
+        android:background="#d3d3d3"/>
+
+    
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:paddingLeft="15dp"
+     android:paddingRight="15dp"
+     android:paddingTop="15dp"
+     >
+     <Button
+         android:id="@+id/shortcut_Binding_confirm"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:gravity="center"
+         android:textSize="20sp"
+         android:textColor="#ffffff"
+         android:text="下一步" 
+         android:background="@drawable/selector_red_button"/>
+
+ </LinearLayout>
+    
+
+</LinearLayout>

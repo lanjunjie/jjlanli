@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/ba_lifelong"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dip"
+                android:text="购买类型:" />
+
+            <TextView
+                android:id="@+id/tex_passtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dip"
+                android:text="点财通XX会员" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dip"
+             android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dip"
+                android:text="金额:" />
+
+            <TextView
+                android:id="@+id/tex_somegoods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dip"
+                android:text="XXXX元" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dip"
+             android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dip"
+                android:text="支付方式:" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_Manner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_Online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="线上支付" />
+
+                <RadioButton
+                    android:id="@+id/radio_Offline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="线下汇款" />
+
+               
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#FF0000"
+        android:text="温馨提示:"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="10dip"
+        android:textSize="14dip"
+        android:text="1.如选择线上支付，订单提交且您将会进入支付环节，请您务必确认您的订单内容正确。"/>
+	<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:textSize="14dip"
+        android:text="1.如选择线下汇款方式，请您汇款至:"/>
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        android:textColor="#FF0000"
+        android:text="汇款账户 : 北京展恒基金销售有限公司"/>
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        android:textColor="#FF0000"
+        android:text="开户行 : 交通银行北京北三环中路支行"/>
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        android:textColor="#FF0000"
+        android:text="充值账户 : 110060567018150065968"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dip"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/but_throughubmit"
+	        android:layout_width="240dip"
+	        android:layout_height="50dip"
+	        android:textColor="#FFFFFF"
+	        android:textSize="18dip"
+	        android:text="提交"
+	        android:background="@drawable/selector_goods_pass"/>
+	</LinearLayout>
+</LinearLayout>

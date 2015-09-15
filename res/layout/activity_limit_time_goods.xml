@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <com.myfp.myfund.ui.view.FlexibilityListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:layout_height="match_parent" >
+    </com.myfp.myfund.ui.view.FlexibilityListView>
+
+</LinearLayout>

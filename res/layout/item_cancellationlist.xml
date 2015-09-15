@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_white_button"
+    android:orientation="horizontal" >
+     
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+    
+
+    <TextView
+        android:id="@+id/tv_cancellation_fundname"
+        android:layout_weight="2"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+       />
+    <TextView
+        android:id="@+id/tv_cancellation_yewu"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="设置分红方式"
+         />
+
+    <TextView
+        android:id="@+id/tv_cancellation_fene"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="11111111"
+        />
+
+    <TextView
+        android:id="@+id/tv_cancellation_date"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="2015/02/25"
+        />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/bt_deal_cancellation"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_red_button"
+            android:gravity="center"
+            android:text="撤单"
+            android:textColor="@color/white_bt_normal"
+            />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include layout="@layout/public_header"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dip"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜"
+            android:textColor="#FF0000"
+            android:textSize="24dip"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已经成为点财通会员"
+            android:textColor="#FF0000"
+            android:textSize="20dip"/>
+    </LinearLayout>
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"
+	    android:layout_marginTop="50dip"
+	    android:gravity="center"
+	    android:orientation="horizontal">
+			<Button 
+			    android:id="@+id/butt_acrdpay"
+			    android:layout_width="250dip"
+			    android:layout_height="50dip"
+			    android:background="@drawable/selector_futures_buuton"
+			    android:textColor="#FFFFFF"
+			    android:textSize="18dip"
+			    android:text="立即购买基金"/>
+	</LinearLayout>
+
+</LinearLayout>

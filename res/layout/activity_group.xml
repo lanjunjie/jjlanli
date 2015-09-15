@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:id="@+id/parent"
+    android:orientation="vertical" >
+    <!--动态显示界面-->
+	<LinearLayout android:orientation="vertical" 
+		          android:layout_width="match_parent" 
+		          android:layout_height="match_parent"
+		          android:id="@+id/body" 
+		          android:layout_weight="0.95">
+		 
+	    
+    </LinearLayout>
+    
+	<!--底部功能菜单栏  -->
+	<LinearLayout  
+		         android:orientation="horizontal" 
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content" 
+		         android:background="#fff"
+		         >		 
+		<LinearLayout 
+			          android:orientation="vertical" 
+			          android:layout_width="0dip"
+			          android:layout_height="match_parent" 
+			          android:id="@+id/home_a"
+		
+		              android:layout_weight="1" 
+		              android:gravity="center_horizontal">
+		              <View android:layout_width="match_parent"
+		                  android:layout_height="0.5dp"
+		                  android:background="#9D9D9D"/>
+			<ImageView 
+			   		   android:id="@+id/imag_home"
+			           android:layout_gravity="top|center" 
+			           android:layout_height="wrap_content" 
+			           android:background="@drawable/item_home"
+			     		 android:layout_marginTop="5dip"
+			           android:layout_width="wrap_content" 
+			           />
+			<TextView  android:layout_width="wrap_content"
+				       android:layout_height="wrap_content" 
+				       android:text="首页"
+				       android:textSize="14dip"
+				       android:textColor="@color/black"
+				       android:layout_marginBottom="8dp"	
+				/>
+		</LinearLayout> 
+		<LinearLayout 
+			          android:id="@+id/info_a"  
+			          android:orientation="vertical" 
+			          android:layout_width="0dip"
+			          android:layout_height="wrap_content" 
+			          android:layout_weight="1" 
+			          android:gravity="center_horizontal">
+			    <View android:layout_width="match_parent"
+		                  android:layout_height="0.5dp"
+		                  android:background="#9D9D9D"/>
+			<ImageView 
+			   		 android:id="@+id/imag_info"
+			           android:layout_gravity="top|center" 
+			           android:background="@drawable/item_info"
+			           android:layout_marginTop="5dip"
+			           android:layout_height="wrap_content" 
+			           android:layout_width="wrap_content" 
+			           />
+			<TextView android:layout_width="wrap_content"
+				      android:layout_height="wrap_content" 
+				      android:text="推荐"
+				      android:textSize="14dip"
+				      android:textColor="@color/black"
+				      android:layout_marginBottom="8dp"
+				/>
+		</LinearLayout>
+		<LinearLayout 
+			          android:orientation="vertical" 
+			          android:layout_width="0dip"
+			          android:id="@+id/tadre_a" 
+			          android:layout_height="wrap_content"
+			          android:layout_weight="1" 
+			          
+			          android:gravity="center_horizontal">
+			    <View android:layout_width="match_parent"
+		                  android:layout_height="0.5dp"
+		                  android:background="#9D9D9D"/>
+			<ImageView 
+			    	android:id="@+id/imag_tadre"
+			          android:layout_gravity="top|center" 
+			          android:background="@drawable/item_tadre"
+			          android:layout_marginTop="5dip"
+			          android:layout_height="wrap_content" 
+			          android:layout_width="wrap_content" 
+			          
+			 />
+			<TextView android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+			          android:text="资讯"
+			          android:textSize="14dip"
+				      android:textColor="@color/black"
+			          android:layout_marginBottom="8dp"
+			/>
+		</LinearLayout>
+		<LinearLayout 
+			         android:orientation="vertical" 
+			         android:layout_width="0dip"
+			         android:id="@+id/my_a" 
+			         android:layout_height="wrap_content"
+			         android:layout_weight="1" 
+			         
+			         android:gravity="center_horizontal">
+			    <View android:layout_width="match_parent"
+		                  android:layout_height="0.5dp"
+		                  android:background="#9D9D9D"/>
+			<ImageView  
+			    android:id="@+id/imag_my"
+			         android:layout_gravity="top|center" 
+			         android:background="@drawable/item_my"
+			         android:layout_marginTop="5dip"
+			         android:layout_height="wrap_content" 
+			         android:layout_width="wrap_content" 
+			         
+			   />
+			<TextView android:layout_width="wrap_content"
+				     android:layout_height="match_parent" 
+				     android:text="我的"
+				     android:textSize="14dip"
+				     android:textColor="@color/black"
+				     android:layout_marginBottom="8dp"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>

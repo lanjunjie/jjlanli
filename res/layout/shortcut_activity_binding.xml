@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#fff" 
+    android:orientation="vertical" >
+    <include layout="@layout/public_header"/>
+  <!--  android:background="#F0F0F0" --> 
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="银行卡号"/>
+        <EditText 
+            android:id="@+id/edit_shortcut_importcard"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dip"
+            android:background="@null"
+            />
+    </LinearLayout>
+   
+    
+   <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="110dp"
+        android:background="#d3d3d3"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="预留手机号"/>
+        <EditText 
+            android:id="@+id/edit_shortcut_phone"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            />
+        <View android:layout_width="1dp"
+    android:layout_height="15dp"
+    android:layout_gravity="center"
+    android:background="#D3D3D3"/>
+          <com.myfp.myfund.ui.view.TimeCountButton
+            android:id="@+id/shortcut_register_gaincode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_white_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="13sp"
+            android:text="获取验证码"
+            android:textColor="#0000ff" />
+    </LinearLayout>
+   <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="110dp"
+        android:background="#d3d3d3"/>
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dip"
+            android:text="验证码"/>
+        <EditText 
+            android:id="@+id/edit_shortcut_code"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dip"
+            android:background="@null"
+            />
+    </LinearLayout>
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="110dp"
+        android:background="#d3d3d3"/>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+         <CheckBox
+             android:id="@+id/shortcut_dredgede_readed"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="我已阅读并同意相关"
+            
+             android:textColor="#434343" />
+
+        <TextView 
+            android:id="@+id/shortcut_dredgede_clause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#f00"
+            android:text="服务条款"/>
+    </LinearLayout>
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:paddingLeft="15dp"
+     android:paddingRight="15dp"
+
+     >
+     <Button
+         android:id="@+id/butt_shortcut_confirm"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:gravity="center"
+         android:textSize="20sp"
+         android:textColor="#ffffff"
+         android:text="下一步" 
+         android:background="@drawable/selector_red_button"/>
+
+ </LinearLayout>
+    
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="14dp"
+    
+    android:text="温馨提示：该银行卡仅用于公募基金交易，民生银行全程监管您的资金安全"/>
+</LinearLayout>

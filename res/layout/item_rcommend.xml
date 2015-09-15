@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="@drawable/tuijiandi2"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                     >
+                    <TextView android:id="@+id/fundname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="华商未来主题(000800)股票型"
+                        android:textColor="#ff0000"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="right"
+                  >
+                    <TextView android:id="@+id/oneyearredound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="59%"
+                        android:textColor="#ff0000"
+                     	android:singleLine="true"
+                        android:textSize="20sp"/>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今年以来收益"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+   		<TextView 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginLeft="10dp"
+   		    android:text="【推荐理由】"/>
+   		<TextView android:id="@+id/recommendreason"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginTop="5dp"
+   		    android:layout_marginLeft="10dp"
+   		    android:layout_marginRight="10dp"
+   		    android:text="该基金偏重军工和高端装备制造板块，而今年以来国防军工主题持续发展，利好不断，而且借助国企改革风口，军工改革主题投资机会明显。"/>
+	</LinearLayout>
+</LinearLayout>

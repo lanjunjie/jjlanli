@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f3"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="45dp"
+        android:text="固收产品银行汇款账户"
+        android:textColor="#515151"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="41dp"
+        android:text="名    称: 北京展恒基金销售有限公司"
+        android:textColor="#686869"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="41dp"
+        android:paddingTop="19dp"
+        android:text="账    户: 7117610181600003334"
+        android:textColor="#686869"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="41dp"
+        android:paddingTop="19dp"
+        android:text="开户行: 交通银行北三环中路支行"
+        android:textColor="#686869"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="44dp"
+        android:text="温馨提示: 转账汇款时请注明“姓名+手机号”"
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/tex_offline_gs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/selector_register_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确认"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView android:id="@+id/bink_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="70dp"
+        android:text="固收专线: 010—56236260"
+        android:textSize="15sp" />
+
+</LinearLayout>

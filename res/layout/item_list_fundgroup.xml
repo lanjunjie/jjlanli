@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/textView_fundGroup_fundName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_slogan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_fundGroup_fundName"
+        android:layout_marginTop="5dp"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView_fundGroup_slogan"
+        android:layout_alignParentRight="true"
+        android:text="%"
+        android:textColor="#f00" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_expectedEarnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView_fundGroup_2"
+        android:layout_toLeftOf="@id/textView_fundGroup_2"
+        android:textColor="#f00"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView_fundGroup_2"
+        android:layout_toLeftOf="@id/textView_fundGroup_expectedEarnings"
+        android:text="近一年收益"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_fundGroup_slogan"
+        android:layout_marginTop="10dp"
+        android:text="展恒费率:"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_zhRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_3"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/textView_fundGroup_3"
+        android:textColor="#f00" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_3"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/textView_fundGroup_zhRate"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_riskLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_3"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_3"
+        android:layout_toLeftOf="@id/textView_fundGroup_riskLevel"
+        android:text="风险:"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/textView_fundGroup_rate"
+        android:text="起购:"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_minInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_3"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/textView_fundGroup_5"
+        />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_fundGroup_3"
+        android:layout_marginTop="10dp"
+        android:text="13年以来涨幅:"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_thatYearRedound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_6"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/textView_fundGroup_6"
+        android:textColor="#f00" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_fundGroup_6"
+        android:layout_marginTop="10dp"
+        android:text="高出股基平均涨幅:"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView_fundGroup_highYearRedound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fundGroup_7"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/textView_fundGroup_7"
+        android:textColor="#f00" />
+
+    <Button
+        android:id="@+id/tv_fundGroup_buy"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignBottom="@id/textView_fundGroup_7"
+        android:background="@drawable/selector_red_button"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:text="立即购买"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

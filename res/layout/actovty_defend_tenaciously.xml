@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/horizontalScroll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/qqloginlayout1"
+        android:background="@color/setting_item_ash_color"
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+            <RadioGroup
+                android:id="@+id/rad"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+        
+        
+         <RadioButton 
+             android:id="@+id/bt_Purchase_det"
+             android:layout_weight="1"
+           android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/item_defendone"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            />
+
+         <RadioButton
+             android:id="@+id/bt_show_det"
+             android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/item_defendtwoone"
+             android:checked="true"
+             android:button="@null"
+             android:gravity="center"
+              />
+         </RadioGroup>
+         
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalScroll"
+        android:orientation="vertical" >
+        
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

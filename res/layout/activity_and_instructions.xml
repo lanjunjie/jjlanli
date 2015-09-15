@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include layout="@layout/public_header" />
+     <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:background="#0066ff"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dip"
+            android:layout_height="20dip"
+            android:gravity="center"
+            android:text="配资须知" />
+
+    </LinearLayout>
+	
+     <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,投资都需要注册点融通会员，审核成功后需要先缴纳一定的会员费，才可享受基金配资服务"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="2,您的投资本金：一万元起，且一万的整数倍递增"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="3,基金使用期限：91天和182天，按自然日计算，包含各类节假日。"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="4,服务费：配资金额的1.5%或3%,服务费一次性从保证金中扣除"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="5,警戒线：基金账户内总资产减去应计利息低于警戒线时，需尽快补充保证金，并将仓位位控制在剩余保证金的5倍以内。"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="6,平仓线：当账户总资产减去应计利息平仓线时，我们有权将账户进行冻结，平仓操作。"/>
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="7,开始交易时间：一般选择下个交易日。"/>
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="6,基金配资业务具有杠杆效应，它在放大投资收益的同时也必然放大投资风险。投资者既要承担买入基金净值下跌带来的风险，同时还需支付配资成本，投资者由此承担的风险可能超过普通基金交易。"/>
+    </LinearLayout>
+</LinearLayout>

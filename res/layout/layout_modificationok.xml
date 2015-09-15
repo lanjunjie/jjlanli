@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/public_header" />
+    <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="交易密码修改成功，请使用新密码登录"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="30dip"
+        android:textSize="18dp"
+        android:textColor="#ff0000">
+	</TextView>
+	<Button 
+	    android:id="@+id/bt_Confirm_Button"
+	    android:layout_width="200dip"
+	    android:layout_height="40dip"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="30dip"
+	    android:text="确定"
+	    android:textColor="#FFFFFF"
+	    android:background="@drawable/selector_red_button"/>
+	
+</LinearLayout>

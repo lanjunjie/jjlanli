@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:paddingTop="10dp"
+	android:paddingBottom="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_searchResult_fundCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_searchResult_fundName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_searchResult_fundType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+         />
+
+    <ImageView
+        android:id="@+id/img_search_isSelected"
+        android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/red_star_hollow_big" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:text="填写个人信息"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_realnametest_realname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_border"
+        android:hint="请输入您的真实姓名"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/main_et_hint" />
+    
+
+    <EditText
+        android:id="@+id/et_realnametest_idcardnum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/table_border"
+        android:hint="请输入您的身份证号"
+        android:maxLength="18"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/main_et_hint" />
+
+    <EditText
+        android:id="@+id/et_realnametest_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/table_border"
+        android:hint="请输入您的手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/main_et_hint" />
+
+    <Button
+        android:id="@+id/bt_realnametest_nextstep"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_red_button"
+        android:text="下一步"
+        android:textColor="@color/white_bt_normal"
+        android:textSize="25sp" />
+
+</LinearLayout>

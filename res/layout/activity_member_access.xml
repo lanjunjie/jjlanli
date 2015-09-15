@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include layout="@layout/public_header" />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:background="#0066ff"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="15dip"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dip"
+            android:layout_height="20dip"
+            android:gravity="center"
+            android:text="会员准入条件" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,开通展恒基金销售平台的基金账户"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="2,具备两年以上股票或公募基金投资经念"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="3,具备一定的风险承受能力，了解并熟悉相关业务规则"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="4,年龄小于65岁"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="5,接受甲方提供的相关服务及要求"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="6,相关法律规定的其他要求"/>
+    </LinearLayout>
+
+</LinearLayout>

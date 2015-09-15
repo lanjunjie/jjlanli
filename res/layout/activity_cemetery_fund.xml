@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+     <include layout="@layout/public_header" />
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_marginTop="15dip"
+       android:layout_height="30dip"
+       android:layout_marginLeft="10dip"
+       android:layout_marginRight="10dip"
+       android:gravity="center"
+       android:background="#9D9D9D">
+       <LinearLayout 
+           android:id="@+id/bt_sell"
+           android:layout_weight="1"
+           android:layout_width="0dip"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+       <TextView 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:textColor="#ffffff"
+           android:text="热销基金"/>
+       </LinearLayout>
+       <LinearLayout 
+           android:id="@+id/bt_inquire"
+           android:layout_weight="1"
+           android:layout_width="0dip"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+       <TextView 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:textColor="#ffffff"
+           android:text="基金查询"/>
+       </LinearLayout>
+        <LinearLayout 
+           android:id="@+id/bt_optional"
+           android:layout_weight="1"
+           android:layout_width="0dip"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+       <TextView 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:textColor="#ffffff"
+           android:text="自选基金"/>
+       </LinearLayout>
+       
+   </LinearLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_marginTop="15dip"
+       android:layout_height="30dip"
+       android:layout_marginLeft="10dip"
+       android:layout_marginRight="10dip"
+       android:gravity="center"
+       android:background="@drawable/backdrop_pure">
+        <TextView 
+           android:id="@+id/text_word"
+           android:layout_weight="1"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="基金代码"/>
+       <TextView 
+           android:id="@+id/text_name"
+           android:layout_weight="2"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="基金名称"/>
+       <TextView 
+           android:id="@+id/text_earnings"
+           android:layout_weight="2"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="近一年的收益"/>
+       <TextView 
+           android:id="@+id/text_operation"
+           android:layout_weight="1"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="操作"/>
+       
+   </LinearLayout>
+   
+   <ListView 
+       android:id="@+id/list_cemetery_view"
+        android:layout_marginLeft="10dip"
+       	android:layout_marginRight="10dip"
+       	android:background="#FFFFFF"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       
+   </ListView>
+
+
+</LinearLayout>

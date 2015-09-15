@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@color/red_bt_normal" android:state_checked="true" android:state_enabled="true"/>
+    <item android:drawable="@color/setting_item_ash_color" android:state_checked="false"/>
+    
+    
+</animation-list>

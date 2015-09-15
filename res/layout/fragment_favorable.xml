@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	
+     <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginlayout1"
+        
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <RadioGroup
+                android:id="@+id/ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+        
+        
+         <RadioButton 
+           android:id="@+id/bt_chase_d"
+         android:layout_weight="1"
+           android:layout_width="0dip"
+            android:layout_height="wrap_content"
+           android:background="@drawable/selector_tobeused"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            />
+
+         <RadioButton
+             android:id="@+id/bt_sh_d"
+             android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+           android:background="@drawable/selector_hasbeen"
+             android:checked="true"
+             android:button="@null"
+             android:gravity="center"
+              />
+          <RadioButton
+             android:id="@+id/bt_th_d"
+             android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+          	android:background="@drawable/selector_have"
+             android:checked="true"
+             android:button="@null"
+             android:gravity="center"
+              />
+         </RadioGroup>
+         
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_below="@+id/linear"
+        android:orientation="vertical" >
+        
+    </android.support.v4.view.ViewPager>
+
+ 
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/selector_white_button"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_dtmanage_fundname"
+            android:layout_weight="2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_dtmanage_firstpaydate"
+            android:layout_weight="1.5"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="11111111" />
+
+        <TextView
+            android:id="@+id/tv_dtmanage_cycle"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="11111111" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/bt_dtmanage_stop"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_red_button"
+                android:gravity="center"
+                android:text="终止"
+                android:textColor="@color/white_bt_normal"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

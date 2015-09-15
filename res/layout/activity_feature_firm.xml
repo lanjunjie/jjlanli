@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f3"
+    android:orientation="vertical" >
+    <include layout="@layout/public_header" />
+    <TextView 
+        android:id="@+id/tex_feature_titl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:text="持有固收会在产品募集成功后7个工作日内显示"/>
+    <LinearLayout 
+        android:id="@+id/lin_feature_tis"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="未购买固收类产品"/>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/tex_feature_rmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="7dip"
+        android:layout_marginLeft="15dip"
+        android:text="固收推荐"/>
+    
+    <ListView 
+        android:id="@+id/list_feature_sik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip"
+        >
+        
+    </ListView>
+    <ListView 
+        android:id="@+id/list_feature_have"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+    
+
+</LinearLayout>

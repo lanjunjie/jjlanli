@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+  <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+  
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_et_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="真实姓名："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_writeifor_realname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/et_writeinfor"
+            android:gravity="center_vertical"
+            android:hint="请填写真实姓名"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/main_et_hint"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_et_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="身份证号："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_writeifor_idcard"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/et_writeinfor"
+            android:gravity="center_vertical"
+            android:hint="请填写身份证号"
+            android:maxLength="18"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/main_et_hint"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_et_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="手机号码："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_writeifor_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/et_writeinfor"
+            android:gravity="center_vertical"
+            android:hint="请填写手机号码"
+            android:maxLength="11"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/main_et_hint"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etchecknum"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/main_et_bg"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/main_et_hint"
+            android:textSize="15sp" />
+
+        <com.myfp.myfund.ui.view.TimeCountButton
+            android:id="@+id/bt_getchecknum"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_red_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="20dp"
+            android:text="获取验证码"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_enextstep"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_red_button"
+            android:text="下一步"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
+</LinearLayout>

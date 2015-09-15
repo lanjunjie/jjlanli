@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BaseActivity" >
+
+    <include layout="@layout/public_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+     <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        android:background="#EED5D2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_my_earnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:text="公募基金总浮动盈亏"
+            android:textColor="#FF7256"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/tv_my_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:text="0.00元"
+            android:textColor="#FF7256"
+            android:textSize="20dip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="8dip"
+            android:background="#F4F4F4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="总资产: "
+                    android:textColor="#FF7256"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:id="@+id/tv_my_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0.00元"
+                    android:textColor="#FF7256"
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_image"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dip"
+                    android:src="@drawable/button_right_arrows" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/la_my_member"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:background="@drawable/selector_my_property"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:src="@drawable/imag_t1" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="点财通会员"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/la_my_product"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:background="@drawable/selector_my_property"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:src="@drawable/imag_t2" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="固收产品"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/la_my_placement"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:background="@drawable/selector_my_property"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:src="@drawable/imag_t3" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="私募产品"
+                android:textSize="18dip" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/la_my_Financing"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+           	android:background="@drawable/selector_my_property"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+               	android:src="@drawable/imag_t4" 
+                android:layout_weight="1"
+                 />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+               	android:text="基金配资" 
+                android:gravity="center_vertical"
+                android:textSize="18dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/la_my_Customize"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/selector_my_property"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:src="@drawable/imag_t5" 
+                android:layout_weight="1"
+                 />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="私人定制"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/la_my_Integral"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/selector_my_property"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:src="@drawable/imag_t6"
+                 />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="我的优惠券"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

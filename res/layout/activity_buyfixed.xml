@@ -1,0 +1,384 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f3"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="请确保您的预约信息与本人信息一致"
+        android:textColor="#808081"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓      名:"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/text_nam_text" 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#515151"
+                android:paddingLeft="20dp"
+                android:textSize="15sp"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/edit_nam_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:background="@null"
+                android:hint="输入姓名"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号:"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tex_idcard_gs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="220602198805283222"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/edit_idcard_gs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:background="@null"
+                android:textColor="#515151"
+                android:hint="输入身份证号"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手  机 号:"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tex_phen_gs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="18652909140"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买产品:"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tex_form_gs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="恒得利26期A类"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="16dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资限额:"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tex_usm_gs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="1万-5万"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="16dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买金额:"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edit_usm_gs"
+                    android:layout_width="147dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:hint="请输入购买金额  " />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推  荐 人:"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edit_recom_gs"
+                    android:layout_width="147dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:hint="推荐人代码(选填)" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:text="支付方式"
+        android:textColor="#515151"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/Relat_online_gs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+          
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线支付:"
+                android:textColor="#515151"
+                    android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imag_online_gs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                 />
+
+        </RelativeLayout>
+	<View 
+    	android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="#e5e5e5"/>
+         <RelativeLayout
+             android:id="@+id/Relat_remit_gs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行汇款:"
+                android:textColor="#515151"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imag_remit_gs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="32dip"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="我已阅读并同意相关" 
+        android:textSize="14sp"/>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+       android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tex_ht_gs"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff2a43"
+        android:textSize="15sp"
+        android:text="《恒得利投资合同》"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff2a43"/>
+    </LinearLayout>
+</LinearLayout>
+<Button
+    android:id="@+id/but_hdl_gs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="16dip"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:text="确认"
+    android:textSize="20sp"
+    android:textColor="#FFFFFF"
+    android:gravity="center"
+    android:background="@drawable/selector_register_button"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

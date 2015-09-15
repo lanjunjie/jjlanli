@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+		<include android:id="@+id/title"
+        layout="@layout/public_header" />
+   
+
+    <LinearLayout
+        android:id="@+id/layout_fundNews_mainTitle"
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="#f2f2f2" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           android:padding="16dp"
+            android:background="@drawable/jjzs_timetv_bg"
+            android:gravity="center"
+            android:text="新闻资讯"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/jjzs_timetv_bg"
+            android:text="研报快讯"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+	<LinearLayout 
+	    android:layout_weight="8"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_fundNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+    </LinearLayout>
+   
+</LinearLayout>

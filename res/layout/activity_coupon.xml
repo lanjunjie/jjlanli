@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include android:id="@+id/title"
+        layout="@layout/public_header" />
+   
+<!-- 
+    <LinearLayout
+        android:id="@+id/layout_coupon_title"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:background="#f2f2f2" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jjzs_timetv_bg"
+            android:gravity="center"
+            android:text="优惠券"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/jjzs_timetv_bg"
+            android:text="抢券"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+         -->
+	<LinearLayout 
+	    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dp"
+	    >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_couponNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

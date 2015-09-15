@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="40dip"
+             android:gravity="center"
+             android:orientation="horizontal">
+             <TextView 
+                 android:id="@+id/te_withdrawal_date"
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="提现日期 "/>
+             <View 
+                 android:layout_width="1dip"
+                 android:layout_height="40dip"
+                 android:background="#BEBEBE"/>
+             <TextView 
+                 android:id="@+id/te_Withdrawal_amount"
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="提现金额 "/>
+             <View 
+                 android:layout_width="1dip"
+                 android:layout_height="40dip"
+                 android:background="#BEBEBE"/>
+             <TextView 
+                 android:id="@+id/te_state"
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="状态 "/>
+             <View 
+                 android:layout_width="1dip"
+                 android:layout_height="40dip"
+                 android:background="#BEBEBE"/>
+
+             <Button
+                 android:id="@+id/but_operation"
+                 android:layout_width="0dip"
+                 android:layout_height="30dip"
+                 android:layout_weight="1"
+                 android:textColor="#ffffff"
+                 android:text="撤消"
+                 android:background="@drawable/selector_recall_button" />
+
+         </LinearLayout>
+         <View 
+             android:layout_width="match_parent"
+             android:layout_height="1dip"
+             android:background="#BEBEBE"/>
+        
+
+</LinearLayout>

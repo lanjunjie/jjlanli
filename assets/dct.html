@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>点财通</title>
+    <style>
+	* { margin: 0; padding: 0; -webkit-tap-highlight-color:rgba(255,255,255,0);}
+	li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	em{
+		font-style: normal;
+	}
+	
+	html,body{
+		height: 100%;
+		min-height: 458px;
+	}
+	body{
+		background: #fff;
+		background-size: 100% 100%;
+		font-size: 65%;
+		font-family: '微软雅黑';
+	}
+	
+	
+	.img{
+		width:100%;
+	}
+	.img > img{
+		display:block;
+		width:100%;	
+	}
+	.Lbutton{
+		width:100%;
+	}
+	.Lbutton > button{
+		display:block;
+		width:165px;
+		height:40px;
+		background:#eb5353;
+		border:0px;
+		border-radius:5px;
+		color:#fff108;
+		font-family:"微软雅黑";
+		font-size:16px;
+		margin:10px auto 0;
+	}
+	.Lbutton > p{
+		font-family:"微软雅黑";
+		font-size:14px;
+		text-align:center;
+		margin-top:10px;
+	}
+	/*加入点财通*/
+	.join{
+		width:94%;
+		margin:0 auto;
+	}
+	.title{
+		width:100%;
+		margin-top:10px;
+		height:55px;
+		background:url(images/title_bg.png) no-repeat;
+		background-size:100% 100%;
+	}
+	.title1{
+		width:100%;
+		height:55px;
+		background:url(images/ddd.png) no-repeat;
+		background-size:100% 100%;
+	}
+	.title > p{
+		padding-left:10px;
+		line-height:45px;
+		color:#FFF;
+		font-weight:bold;
+		font-size:16px;
+	}
+	.title > p > em{
+		font-weight:normal;
+		font-size:12px;
+	}
+	.vip{
+		width:100%;	
+		padding-top:10px;
+	}
+	.vip ul{
+		
+	}
+	.vip ul li{
+		width:30%;
+		float:left;
+		border:1px solid #e9e9f4;
+		padding:5px 0;
+		border-radius:3px;
+		
+	}
+	.vip ul li > span{
+		display:block;
+		
+		
+	}
+	.vip ul li > span > img{
+		display:block;
+		width:25px;
+		height:15px;	
+		float:left;
+		padding-left:15%;
+		
+	}
+	.vip ul li > span strong{
+		
+	}
+	.vip ul li > p{
+		text-align:center;
+		clear:both;
+		padding-top:5px;
+		padding-left:2%;
+		
+	}
+	.vip ul li > p b{
+		
+	}
+	.sss{
+		clear:both;	
+		
+		padding-top:10px;
+	}
+	.sss strong{
+		display:block;
+		color:#eb5353;
+		font-size:16px;
+		font-weight:bold;
+		text-align:center;
+		padding-bottom:5px;
+	}
+	.sss p{
+		color:#666666;
+		text-align:center;	
+	}
+	
+	.ccc{
+		width:100%;	
+		padding-top:10px;
+	}
+	.ccc ul{
+		
+	}
+	.ccc ul li{
+		width:30%;
+		float:left;
+		border:1px solid #e9e9f4;
+		padding:5px 0;
+		algin:center;
+		border-radius:3px;
+	}
+	.ccc ul li > p{
+		clear:both;
+		padding-top:5px;
+		text-align:center;
+	}
+	.ccc ul li > p b{
+		
+	}
+	.blue{
+		font-family:"微软雅黑";
+		font-size:16px;
+		font-weight:bold;
+		color:#5ba2d5;
+		text-align:center;
+		line-height:45px;
+	}
+	.group{
+		width:94%;
+		margin:0 auto;
+	}
+	.g_count{
+		width:100%;
+		margin:0 auto;
+	}
+	.g_count ul{
+		width:100%;
+	}
+	.g_count ul li{
+		width:47%;
+		float:left;
+		margin-top:10px;
+	}
+	.g_count ul li > span{
+		display:block;
+		border-radius:5px;
+		width:90px;
+		height:35px;
+		background:#ee5656;
+		color:#fff;
+		line-height:35px;
+		text-align:center;
+		margin-left:17%;
+	}
+	.g_count ul li > article{
+		width:92%;
+		border-radius:5px;
+		border:1px solid #c6c6c6;
+		padding:5px;
+		margin-top:10px;
+	}
+	.g_count ul li > article > b{
+		font-weight:normal;
+		color:#666666;
+	}
+	.g_count ul li > article > p{
+		text-indent:24px;
+		line-height:20px;
+		color:#666666;
+	}
+	.g_count ul li > article > em{
+		line-height:20px;
+		height:30px;
+		position:relative;
+	}
+	.g_count ul li > article > em > img{
+		display:block;
+		width:80px;
+		position:absolute;
+		top:3px;
+		left:98%;
+	}
+	.help{
+		width:94%;
+		margin:0 auto;
+	}
+	.h_center{
+		width:100%;
+	}
+	.h_center ul{
+		
+	}
+	.h_center ul li{
+		width:100%;
+		border-bottom:1px solid #efefef;
+		padding-top:10px;
+	}
+	.h_center ul li > p{
+		line-height:23px;
+	}
+	.h_center ul li > p.color{
+		color:#ff5353;	
+		line-height:30px;
+	}
+	.h_center ul li > p > span{
+		display:block;
+		color:#fff;
+		width:30px;
+		height:30px;
+		border-radius:15px;
+		background:#ff5353;
+		line-height:30px;
+		text-align:center;
+		float:left;
+		margin-right:5px;
+	}
+	
+    .btn {
+        display: block;
+        margin: 10px 3.125% 40px;
+        border-radius: 10px;
+        background: #e53b2e;
+        line-height: 50px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+	<!--img-->
+    <div class="img">
+    	<img src='images/dct1.png' />
+    </div>
+    <!--按钮-->
+    <div class="Lbutton">
+    	 <p>已在展恒平台开户</p>
+    	<button id='joinBtn'>马上申请</button>
+         <p>未在展恒基金平台开户？</p>
+    	<button id='openAccountBtn'>立即开户</button>
+    </div>
+    <!--加入点财通-->
+    <div class="join">
+    	<div class="title">
+        	<p>加入点财通，财富一点通</p>
+        </div>
+        <div class="vip">
+        	<ul>
+            	<li>
+               	  <span><img src="images/vip_01.png"/><strong>年度会员</strong></span>
+                    <p><b>399元</b></p>
+                    <p>一年内购买基金免申购费</p>
+                </li>
+                <li style="margin-left:4%;">
+               	  <span><img src="images/vip_02.png"/><strong>三年会员</strong></span>
+                  <p><b>599元</b></p>
+                  <p>三年内购买基金免申购费</p>
+                </li>
+            <li style="float:right">
+               	  <span><img src="images/vip_03.png"/><strong>终身会员</strong></span>
+                  <p><b style="color:#eb8953;">1999元</b></p>
+                  <p>终身购买基金免申购费</p>
+                </li>
+            </ul>
+        </div>
+        <div class="sss">   
+       	  <strong>看看你能省多少？</strong>
+            <p>按申购100，000元、平均调整基金操作：4次/年计算</p>
+        </div>
+        <div class="ccc">
+        	<ul>
+            	<li>
+                	<p ><b style="border:1px solid #e9e9f4">持有<b style ="color:#eb8953;">1</b>年</b></p>
+                    <p>可省<b style="font-size:18px;color:#eb8953">2001</b>元</p>
+                </li>
+                <li style="margin-left:4%;">
+                	<p ><b style="border:1px solid #e9e9f4">持有<b style ="color:#eb8953;">3</b>年</b></p>
+                    <p>可省<b style="font-size:18px;color:#eb8953">6601</b>元</p>
+                </li>
+                <li style="float:right">
+                	<p ><b style="border:1px solid #e9e9f4">持有<b style ="color:#eb8953;">10</b>年</b></p>
+                    <p>可省<b style="font-size:18px;color:#eb8953">22001</b>元</p>
+                </li>
+            </ul>
+        </div>
+          <!--
+        <div style='padding-top:90px'>
+		    <p class="blue">买的越多 持有时间越长 省的越多 </p>
+		</div>
+    </div>
+  点财通组合产品
+    <div class="group">
+    	<div class="title1"></div>
+        <div class="g_count">
+        	<ul>
+            	<li>
+                	<span href='javascript:;' id='yjt_jiji'>一键通·积极</span>
+                    <article>
+                    	<b>组合特点</b>
+                        <p>投资权益类资产的股基和混合型基金占比为80%左右，20%为投资固收类资产的债券型基金和货币型基金</p>
+                        <em>风险指数：<img src="images/c_01.png"/></em>
+                    </article>
+                </li>
+                <li style="float:right">
+                	<span href='javascript:;' id='yjt_pingheng'>一键通·平衡</span>
+                    <article>
+                    	<b>组合特点</b>
+                        <p>本债券资产和货币市场资产占比为50%左右，剩余为投资权益类资产的股票型基金和混合型基金。</p>
+                        <em>风险指数：<img src="images/c_02.png"/></em>
+                    </article>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                	<span href='javascript:;' id='yjt_wenjian'>一键通·稳健</span>
+                    <article>
+                    	<b>组合特点</b>
+                        <p>债券资产和货币市场资产占比达70%以上，另外还配置25%的混合型基金</p>
+                        <em>风险指数：<img src="images/c_03.png"/></em>
+                    </article>
+                </li>
+                <li style="float:right">
+                	<span href='javascript:;' id='yjt_baoshou'>一键通·保守</span>
+                    <article>
+                    	<b>组合特点</b>
+                        <p>债券资产和货币市场资产占比超过80%，另外还配置少量的混合型基金。</p>
+                        <em>风险指数：<img src="images/c_04.png"/></em>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="Lbutton" style="clear:both;padding-top:10px">
+    	<button style="color:#fff" id='scanBtn'>查看详情</button>
+    </div>-->
+    <!--帮助中心-->
+    <div class="help" style="clear:both;padding-top:10px;">
+    	<div class="title"><p>帮助中心</p></div>
+        <div class="h_center">
+        	<ul>
+            	<li>
+                	<p class="color"><span>1</span>什么是点财通？</p>
+                    <p>点财通是展恒为用户提供的增值会员服务。开通点财通会员后，用户可实现一键购买基金组合及永久免申购费的特权。</p>
+                </li>
+                <li>
+                	<p class="color"><span>2</span>怎样开通点财通会员？</p>
+                    <p>请拨打010-62020088（转7070）联系专属顾问开通点财通会员。</p>
+                </li>
+                <li>
+                	<p class="color"><span>3</span>点财通会员如何收费？</p>
+                    <p>一年收取费用399元，三年收取599元，终身收取1999元，加入会员，可获得免申购费福利。</p>
+                </li>
+                <li>
+                	<p class="color"><span>4</span>点财通会员福利？</p>
+                    <p>点财通可以0申购费购买展恒理财代销的任意基金产品，申购费会在交易确认后5个工作日内返还到您的银行卡里。申购费费用30元起返，单日交易费用不满30元者将会与下一次交易费用进行累积，累积费用超过30元后进行返还。优惠费用单次返还上限为800元，单日交易费用超过800元者，优惠费用将会分次返还至您的银行卡。</p>
+                </li>
+                 <li>
+                	<p class="color"><span>5</span>点财通会员缴费账户？</p>
+                    <p>公司名称：北京展恒基金销售有限公司</p>
+					<p>开户行：交通银行北京北三环中路支行</p>
+					<p>充值账户：110060567018150065968</p>
+					<p>两个工作日内我们这边的运营专员会进行邮件或电话确认</p>
+					<p>注意：向指定账户充值时请您务必填写备注：【点财通会员】</p>
+					<p>该备注将成为您获得免申购费的审核凭证之一 </p>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    
+    
+    
+    <!--<img src='images/dct1.png' />
+    <a href='javascript:;' class='btn_only' id='openAccountBtn'>立即开户</a>
+    <img src='images/dct2.png' />
+    <a href='javascript:;' class='btn_only' style='color: white;' id='scanBtn'>查看详情</a>
+    <img src='images/dct3.png' />-->
+    
+    <a href='javascript:;' class='btn' id='tel'>客服热线：010-62020088</a>
+    <script>
+		document.getElementById('tel').onclick = function(){
+		 //alert("useragent:"+window.navigator.userAgent);
+			window.Android.showDetial('010-62020088');
+		};
+    </script>
+
+<script>
+       //JavaScriptInterface类里面的监听
+    	document.getElementById('joinBtn').onclick = function(){
+		 //alert("useragent:"+window.navigator.userAgent);
+			window.Android.showDetial('http://cai.myfund.com/diancaitong/aindex.html');
+		};
+		document.getElementById('openAccountBtn').onclick = function(){
+		 //alert("useragent:"+window.navigator.userAgent);
+			window.Android.showDetial('https://apptrade.myfund.com:8383/appweb/page/frame/frame.htm?test=y');
+		};
+		document.getElementById('yjt_jiji').onclick = function(){
+			// alert("useragent:"+window.navigator.userAgent);
+			//JavaScriptInterface类里面的监听
+			window.Android.showDetial('5');
+		};
+		document.getElementById('yjt_pingheng').onclick = function(){
+			// alert("useragent:"+window.navigator.userAgent);
+			//JavaScriptInterface类里面的监听
+			window.Android.showDetial('4');
+		};
+		document.getElementById('yjt_wenjian').onclick = function(){
+			// alert("useragent:"+window.navigator.userAgent);
+			//JavaScriptInterface类里面的监听
+		window.Android.showDetial('3');
+		};
+		document.getElementById('yjt_baoshou').onclick = function(){
+			// alert("useragent:"+window.navigator.userAgent);
+			//JavaScriptInterface类里面的监听
+			window.Android.showDetial('2');
+		};
+		document.getElementById('scanBtn').onclick = function(){
+			// alert("useragent:"+window.navigator.userAgent);
+			//JavaScriptInterface类里面的监听
+			window.Android.showDetial('1');
+		};
+		
+    </script>
+</body>
+
+</html>

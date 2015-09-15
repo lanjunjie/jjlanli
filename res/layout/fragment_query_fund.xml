@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+           <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="自选" />
+		 
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#ccc" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="基金简称" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-10dp"
+                android:src="@drawable/arrows_left" />
+
+            <com.myfp.myfund.ui.view.ListItemHorizontalScrollView
+                android:id="@+id/item_scroll_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最新净值" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="日涨幅" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_title_total"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计净值" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_title_week"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="周涨幅" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_title_month"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="月涨幅" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_title_season"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_season"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="季涨幅" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_season"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_title_halfYear"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_halfYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="半年涨幅" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_halfYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_title_year"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="年涨幅" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_title_toyear"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_query_title_toyear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="今年涨幅" />
+
+                        <ImageView
+                            android:id="@+id/img_query_title_toyear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/arrows_down" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="操作" />
+                </LinearLayout>
+            </com.myfp.myfund.ui.view.ListItemHorizontalScrollView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_arrows_right"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrows_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ccc" />
+
+    <com.myfp.myfund.ui.view.FixColumnListView
+        android:id="@+id/listView_fundSelect_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

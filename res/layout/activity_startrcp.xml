@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/public_header" />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:text="  一.设立风险控制系统的目的 
+为了贯彻落实中国证监会发出的《证券投资基金销售适用性指导意见》，把合适的产品卖给合适的投资人，切实保障投资人的权益，我公司特别引进了基金销售适用性方案， 为投资人提供风险承受能力评估服务，通过问卷形式了解投资人的投资目的、投资期限、投资经验、财务状况、短期及长期风险承受水平等信息， 从而对投资人的风险承受能力进行多角度全面化的分析，帮助投资人选择合适的投资产品。 
+请投资者在进行基金投资前认真填写风险承受能力评估问卷，以便获得客观的风险承受能力评价，方便您进行基金投资。 
+"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:text="  二.风险等级划分风险等级分类：激进型、积极型、稳健型、保守型、安逸型 
+每类风格的投资者特征如下： \n
+  1、进取型 
+进取型投资者：在基金投资中，您通常专注于投资的长期增值，并愿意为此承受较大的风险。短期的投资波动并不会对您造成大的影响，追求超高的回报才是您关注的目标。 
+风险承受能力：高 
+获利期待：高回报率 \n
+  2、积极型 
+稳健型投资者：在基金投资中，您渴望有较高的投资收益，但又不愿承受较大的风险；可以承受一定的投资波动，但是希望自己的投资风险小于市场的整体风险。您有较高的收益目标，且对风险有清醒的认识。 
+风险承受能力：中高 
+获利期待：中高回报率 \n
+  3、稳健型 
+稳健型投资者：在基金投资的过程中，风险较小的情况下获得一定的收益是您主要的投资目的。您通常愿意使本金面临一定的风险，但在做投资决定时，会仔细地对将要面临的风险进行认真的分析。 总体来看，您愿意承受市场的平均风险。 
+风险承受能力：中 
+获利期待：中等回报率 \n
+  4、保守型 
+保守型投资者：稳定是您首要考虑的因素之一。在基金投资中，您希望在保证本金安全的基础上能有一些增值收入。追求较低的风险，对投资回报的要求不是太高。 
+风险承受能力：较低 
+获利期待：稳定的投资收益 \n
+  5、安全型 
+安全型投资者：在基金投资过程中，保护本金不受损失和保持资产的流动性是您的首要目标。您对投资的态度是希望投资收益稳定，不愿或不能承担高风险以换取高收益，通常不太在意资金是否有较大增值，追求稳定。 
+有的投资者可能并不认为自己属于安全型一类，但因为年龄或家累的缘故，抗风险能力实际并不强，此时，获取稳定回报应当成为投资的首要考虑。 
+风险承受能力：低 
+获利期待：很稳定的投资收益 "/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical">
+    <Button 
+        android:id="@+id/bu_test"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:text="开始测评"
+        android:textColor="#FFFFFF"
+        android:textSize="18dip"
+        android:background="@drawable/selector_red_button"/>
+    </LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

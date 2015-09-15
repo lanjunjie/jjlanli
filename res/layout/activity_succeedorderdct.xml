@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/public_header" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/order_successtwo"/>
+        <TextView 
+            android:id="@+id/huiyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textColor="#FF0000"
+            android:textSize="16dip"
+            android:text="您已成功预约"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="5dip"
+        android:textSize="16dip"
+        android:text="由于您选择了汇款方式，为了确保您的利益，请您尽快汇款至以下账户:"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dip"
+	    android:gravity="center_horizontal"
+	    android:textColor="#FF0000"
+	    android:textSize="16dip"
+	    android:text="汇款账户 : 北京展恒基金销售有限公司"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dip"
+	    android:gravity="center_horizontal"
+	    android:textColor="#FF0000"
+	    android:textSize="16dip"
+	    android:text="开户行 : 交通银行北京北三环中路支行"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dip"
+	    android:gravity="center_horizontal"
+	    android:textColor="#FF0000"
+	    android:textSize="16dip"
+	    android:text="充值账户 : 110060567018150065968"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dip"
+	    android:layout_marginLeft="8dip"
+	    android:layout_marginRight="8dip"
+	    android:textSize="16dip"
+	    android:text="注: 您的点财通会员身份将于你您成功汇款的次日生效，如有任何问题，请拨打客服热线:"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:textSize="16dip"
+	    android:text="010-56236260"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="20dip"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/backonclick"
+	        android:layout_width="250dip"
+	        android:layout_height="50dip"
+	        android:textSize="16dip"
+	        android:textColor="#FFFFFF"
+	        android:text="确定"
+	        
+	        android:background="@drawable/selector_goods_pass"/>
+	</LinearLayout>
+</LinearLayout>

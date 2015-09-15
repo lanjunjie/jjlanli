@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="50dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout_not_move_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_select_isSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:visibility="gone"
+            android:src="@drawable/red_star_hollow_big" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_select_fundName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_select_fundCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+  
+
+        <com.myfp.myfund.ui.view.ListItemHorizontalScrollView
+            android:id="@+id/item_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/item_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_select_unitEquity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_select_dealDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       
+                        android:gravity="center" />
+                </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/tv_select_dayBenefit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_totalEquity"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/tv_select_weekRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_monthRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_seasonRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_halfYearRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_YearRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_toyearRedound"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/bt_select_operate"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#444"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="购买"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </com.myfp.myfund.ui.view.ListItemHorizontalScrollView>
+    
+
+</LinearLayout>

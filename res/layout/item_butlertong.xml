@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dip"
+	    android:gravity="center"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:id="@+id/te_word_xt"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="代码"/>
+	     <TextView 
+	         android:id="@+id/te_name_xt"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	         android:gravity="center"
+	        android:text="名称"/>
+	      <TextView 
+	          android:id="@+id/te_market_value"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	         android:gravity="center"
+	        android:text="市值"/>
+	       <TextView 
+	           android:id="@+id/te_profit_and"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="盈亏"/>
+	       <TextView 
+	           android:id="@+id/te_earnings_xt"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="收益"/>
+	</LinearLayout>
+    <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dip"
+	    android:layout_marginLeft="8dip"
+	    android:background="#BEBEBE"/>
+
+</LinearLayout>

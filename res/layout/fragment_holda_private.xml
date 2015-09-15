@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dip">
+    
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/defend_setting1"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/te_na_xtone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:singleLine="false"
+            android:ems="1"
+            android:text="某某某某某"
+            />
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_weight="4"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:background="@drawable/defend_setting2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="持有份额"/>
+             <TextView 
+                 android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                android:gravity="center"
+                android:text="成本"/>
+              <TextView 
+                  android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                android:gravity="center"
+                android:text="净值"/>
+        </LinearLayout>
+         <LinearLayout
+             android:layout_weight="1" 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal">
+            <TextView 
+                android:id="@+id/te_purchasing_xtone"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                android:gravity="center"
+                android:text="2015/05/18"/>
+            
+             <TextView 
+                 android:id="@+id/te_latest_xtone"
+                 android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                android:gravity="center"
+                android:text="111.11"/>
+             <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                 android:gravity="center"
+                android:orientation="vertical">
+                
+             <TextView 
+                 android:id="@+id/te_open_xtone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="每月20日"/>
+             <TextView 
+                 android:id="@+id/te_open_xt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每月20日"/>
+              </LinearLayout>
+             
+             
+        </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dip"
+             android:layout_weight="1"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:layout_width="0dip"
+                 android:layout_height="match_parent"
+                 android:background="@drawable/defend_setting2"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="开放日" />
+
+             <TextView
+                 android:layout_width="0dip"
+                 android:layout_height="match_parent"
+                 android:background="@drawable/defend_setting2"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="市值" />
+
+             <TextView
+                 android:layout_width="0dip"
+                 android:layout_height="match_parent"
+                 android:background="@drawable/defend_setting2"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="收益率" />
+         </LinearLayout>
+
+         <LinearLayout 
+             android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal">
+            <TextView 
+                android:id="@+id/te_floating_xtone"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                android:gravity="center"
+                android:text="1000000.00"/>
+             <TextView 
+                 android:id="@+id/te_yie_xtone"
+                 android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                android:gravity="center"
+                android:text="30%"/>
+              <TextView
+                  android:id="@+id/te_pur_xtone" 
+                  android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/defend_setting2"
+                android:gravity="center"
+                android:text="200万"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    </LinearLayout>
+  
+
+</LinearLayout>

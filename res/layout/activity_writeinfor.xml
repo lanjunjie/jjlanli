@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bt_normal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+ 
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_et_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="邮箱地址："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_writeifor_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/et_writeinfor"
+                    android:gravity="center_vertical"
+                    android:hint="请填写邮箱地址"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="@color/main_et_hint"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_et_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="交易密码："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_writeifor_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/et_writeinfor"
+                    android:gravity="center_vertical"
+                    android:hint="请输入交易密码(6~8位)"
+                    android:inputType="textPassword"
+                    android:maxLength="8"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="@color/main_et_hint"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_et_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="确认密码："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_writeifor_againpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/et_writeinfor"
+                    android:gravity="center_vertical"
+                    android:hint="请确认交易密码(6~8位)"
+                    android:inputType="textPassword"
+                    android:maxLength="8"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="@color/main_et_hint"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_et_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="服务代码："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_writeifor_servecode"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/et_writeinfor"
+                    android:gravity="center_vertical"
+                    android:hint="没有服务代码请填7777"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="@color/main_et_hint"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_et_bg"
+                android:descendantFocusability="afterDescendants"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_writeinfor_agreement"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:clickable="true"
+                    android:src="@drawable/bg_radio_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="我已认真阅读并了解"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_et_bg"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_writeinfor_kh"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="《开户协议》"
+                        android:textColor="@color/blue_bt_normal"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_writeinfor_tzr"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="《投资人权益须知》"
+                        android:textColor="@color/blue_bt_normal"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_writeinfor_yhzz"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="《银行自动转账授权书》"
+                        android:textColor="@color/blue_bt_normal"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_writeinfor_fx"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="《风险提示》"
+                        android:textColor="@color/blue_bt_normal"
+                       />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_writeifor_nextstep"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/selector_red_button"
+                    android:text="确定提交"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
