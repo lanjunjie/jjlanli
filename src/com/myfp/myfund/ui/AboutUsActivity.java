@@ -17,7 +17,7 @@ public class AboutUsActivity extends BaseActivity {
 	protected void setContentView() {
 		setContentView(R.layout.activity_about_us);
 	}
-
+//
 	@Override
 	protected void initViews() {
 		setTitle("关于展恒");
